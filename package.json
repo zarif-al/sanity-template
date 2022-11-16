@@ -11,8 +11,12 @@
 		"build": "sanity build",
 		"deploy": "sanity-deploy",
 		"graphql": "sanity graphql deploy --no-playground",
-		"graphql-playground": "sanity graphql deploy --playground"
+		"graphql-playground": "sanity graphql deploy --playground",
+		"tsc": "npx tsc"
 	},
+	"pre-commit": [
+		"tsc"
+	],
 	"keywords": [
 		"sanity"
 	],
@@ -30,5 +34,7 @@
 		"react-dom": "^17.0",
 		"styled-components": "^5.2.0"
 	},
-	"devDependencies": {}
+	"devDependencies": {
+		"pre-commit": "^1.2.2"
+	}
 }
