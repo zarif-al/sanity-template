@@ -12,7 +12,8 @@
 		"deploy": "sanity-deploy",
 		"graphql": "sanity graphql deploy --no-playground",
 		"graphql-playground": "sanity graphql deploy --playground",
-		"tsc": "npx tsc"
+		"tsc": "npx tsc",
+		"lint": "eslint ."
 	},
 	"pre-commit": [
 		"tsc"
@@ -36,6 +37,7 @@
 	},
 	"devDependencies": {
 		"pre-commit": "^1.2.2",
-		"typescript": "^4.9.3"
+		"typescript": "^4.9.3",
+		"@typescript-eslint/parser": "^5.43.0"
 	}
 }

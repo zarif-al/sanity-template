@@ -1,3 +1,18 @@
 {
-  "extends": "@sanity/eslint-config-studio"
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "extends": "@sanity/eslint-config-studio",
+  "rules": {
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "error"
+  },
+  "ignorePatterns": [
+    "docs",
+    "node_modules",
+    "plugins",
+    "config",
+    "static"
+  ]
 }
