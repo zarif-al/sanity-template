@@ -1,1 +1,1 @@
-export type { RuleType } from "./schemaTypes";
+export type { RuleType, Meta, Document, Field } from "./schemaTypes";
