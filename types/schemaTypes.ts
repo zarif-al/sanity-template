@@ -158,7 +158,6 @@ export type Document = {
 		title: string;
 		by: { field: string; direction: string }[];
 	}[];
-	[key: string]: any;
 };
 
 export type PreviewProps = {
