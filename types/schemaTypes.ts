@@ -1,6 +1,10 @@
 import { ReactElement } from "react";
 import { ReactComponentLike } from "prop-types";
 
+/**
+ * Taken and modified from https://gist.github.com/barbogast/4bea3ad77272fafe0af3d4f70446d037
+ */
+
 export interface Meta {
 	parent: { [key: string]: any };
 	path: string[];
